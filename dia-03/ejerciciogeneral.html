@@ -7,6 +7,7 @@
         <meta name="Autor" content="Thomas Noriega">
         <meta name="Descripcion" content="Ejercicios sobre semantica y estructura HTML">
         <meta name="keywords" content="felicidad, desarrollo, Paginas, Frase">
+        <script src="https://kit.fontawesome.com/beb55b994d.js" crossorigin="anonymous"></script>
         <style>
          .navbar {
             display: flex;
@@ -43,14 +44,94 @@
             color: #00ff80;
         }
         #sect3 {
-            background-color: rgb(184, 185, 185);
+            background-color: rgb(230, 230, 230);
         }
         #acerca_de_mi {
-            background-color: rgb(180, 199, 216);
+            background-color: rgb(68, 179, 173);
         }
         #phrase {
             background-color: rgb(67, 180, 165);
         }
+        .footer {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+            background: rgb(9, 107, 102);
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+        }
+        .footer-list {
+            display: flex;
+            list-style: none;
+        }
+        .footer-list li {
+            margin-right: 20px;
+        }
+
+        .footer-list li:last-child {
+            margin-right: 0;
+        }
+
+        .footer-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .list li a:hover {
+            color: #00ff80;
+        }
+        .list {
+            display: flex;
+            list-style: none;
+        }
+        .list li {
+            margin-right: 20px;
+        }
+
+        .list li:last-child {
+            margin-right: 0;
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .list li a:hover {
+        color: #00ff80;
+        }
+
+        .site-list {
+            display: flex;
+            list-style: none;
+        }
+        .site-list li {
+            margin-right: 20px;
+        }
+
+        .site-list li:last-child {
+            margin-right: 0;
+        }
+
+        .site-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        .site-list li a:hover {
+        color: #00ff80;
+        }
+
+
 
         </style>
     </head>
@@ -82,7 +163,7 @@
         <!--Within this h2 I set goals to know that the list below talks about them-->
         <h2>Metas</h2>
         <!--ordered list with 3 items about my goals-->
-        <ol id="olist" class="list">
+        <ol id="olist" class="listo">
             <li>Primero aprender los conceptos y fundamentos de HTML y CSS</li>
             <li>Aprender a poner en práctica lo aprendido.</li>
             <li>Hacer prácticamente todo en inglés</li>
@@ -93,24 +174,24 @@
         <h2>Paginas Favoritas</h2>
         <!--Unordered list with 5 pages that I like-->
         <ul id="ulist2" class="list">
-            <li><a href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
-            <li><a href="https://www.instagram.com/">Instagram</a></li>
-            <li><a href="https://www.youtube.com/">Youtube</a></li>
-            <li><a href="https://openai.com/index/chatgpt/">Chat Gpt</a></li>
-            <li><a href="https://tienda.betplay.com.co/">Betplay</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/">Youtube</a></li>
+            <li><a target="_blank" href="https://openai.com/index/chatgpt/">Chat Gpt</a></li>
+            <li><a target="_blank" href="https://tienda.betplay.com.co/">Betplay</a></li>
         </ul>
         </section>
         <section>
         <!--h2 to separate one topic from another-->
         <h2>Sitio educativo</h2>
         <!--link to go to an educational site using the tag a-->
-        <ul><li><a href="https://ellibrodepython.com/">El libro de python</a></li></ul>
+        <ul class="site-list"><li><a href="https://ellibrodepython.com/">El libro de python</a></li></ul>
         </section>
         <!--line break by means of a br-->
         <br>
         <!--image brought from a URL using img and I leave the link in "src" to show the photo-->
         <img src="https://images.pexels.com/photos/5710585/pexels-photo-5710585.jpeg" alt="Image of someone copying something into their notebook" width="320" height="200"> 
-        <img id="gif" src="/img/gif.gif" alt="" >
+        <img id="gif" src="/img/gif.gif" alt="" width="400" height="400">
         <style>
         #gif {
             float: right;
@@ -193,6 +274,19 @@ Chris se enfrenta a la discriminación y a las dudas de los demás, pero nunca s
       <a title="Documento De ayuda" download="felicidad_de_seneca.pdf" href="/docs/felicidad_de_seneca.pdf">Felicidad.pdf</a>
     </article>
     </section>
+     <section class="container-gallert-inline">
+        <h2>Galería De Imagenes</h2>
+        <div class="gallery-inline">
+            <img src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Imagen 1">
+            <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Imagen 2">
+            <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Imagen 3">
+            <img src="https://images.pexels.com/photos/1476880/pexels-photo-1476880.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Imagen 4"  width="600" height="400" >
+        </div>
+    </section>
     </main>
     <section id="phrase">
     <blockquote>Nunca dejes que nadie te diga que no puedes hacer algo. Ni siquiera yo. Si tienes un sueño, tienes que protegerlo.
@@ -202,7 +296,10 @@ Chris se enfrenta a la discriminación y a las dudas de los demás, pero nunca s
     </section>
     </body>
     
-    <footer>
-    thomasnzcp78@gmail.com 2025
+    <footer class="footer">
+    <ul class="footer-list">
+        <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
+        <li><a href="https://github.com/Thom066"><i class="fa-brands fa-github"></i></a></li>
+        <li>thomasnzcp78@gmail.com 2025</li></ul>
     </footer>
   </html>
