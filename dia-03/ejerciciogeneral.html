@@ -7,23 +7,71 @@
         <meta name="Autor" content="Thomas Noriega">
         <meta name="Descripcion" content="Ejercicios sobre semantica y estructura HTML">
         <meta name="keywords" content="felicidad, desarrollo, Paginas, Frase">
+        <style>
+         .navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+            background: rgb(9, 107, 102);
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+        .nav-list li {
+            margin-right: 20px;
+        }
+
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-list li a:hover {
+            color: #00ff80;
+        }
+        #sect3 {
+            background-color: rgb(184, 185, 185);
+        }
+        #acerca_de_mi {
+            background-color: rgb(180, 199, 216);
+        }
+        #phrase {
+            background-color: rgb(67, 180, 165);
+        }
+
+        </style>
     </head>
     <body>
-        <header>
+        <header id="headernav">
         <!--In this heading tag, which is an h1, I put my name-->
-        <h1 id="titlePrincipal" class="header">Thomas Noriega Zuleta</h1>
-        <nav>
-            <ul>
-                <li>Acerca de mí</li>
-                <li>Contacto</li>
+        
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#acerca_de_mi">Acerca de mí</a></li>
+                <li><a href="#videoo">Video</a></li>
                 <li><a href="#sect3">Más</a></li>
                 <li><a href="#phrase">Frase celebre</a></li>
             </ul>
         </nav>
-        <hr>
-        </header>
+        </header>  
+        
+        <h1 id="titlePrincipal" class="header">Thomas Noriega Zuleta</h1>
+        
         <main>
-        <article>
+        <article id="acerca_de_mi">
         <!--In this H2 tag, I put my hobbies-->
         <h2>Mi pasatiempo favorito es jugar al fútbol y leer libros y aprender más.</h2>
         <!--In this H3 tag, I put my favorite food-->
@@ -62,8 +110,15 @@
         <br>
         <!--image brought from a URL using img and I leave the link in "src" to show the photo-->
         <img src="https://images.pexels.com/photos/5710585/pexels-photo-5710585.jpeg" alt="Image of someone copying something into their notebook" width="320" height="200"> 
+        <img id="gif" src="/img/gif.gif" alt="" >
+        <style>
+        #gif {
+            float: right;
+            margin-right: 20px;
+        }
+        </style>
     </article>
-    <hr>
+    
     <section id="sect3">
     <article>
       <header>
@@ -105,18 +160,40 @@ Chris se enfrenta a la discriminación y a las dudas de los demás, pero nunca s
 </ul>
   </p>
       <p>
-        En este sentido, la película tiene una enseñanza clara: cuando un obstáculo se presenta, buscas soluciones y lo enfrentas. Tienes que seguir adelante porque está en tus manos cambiar la situación. Superar las dificultades habla de perseverancia. Siempre la vida nos interpondrá desafíos
+        En este sentido, la película tiene una enseñanza clara: cuando un obstáculo se presenta, buscas soluciones y lo enfrentas. Tienes que seguir adelante porque está en tus manos cambiar la situación. Superar las dificultades habla de perseverancia. Siempre la vida nos interpondrá desafíos.
       </p>
       <img src="https://cdn.themedizine.com/2021/03/en_busca_de_la_felicidad_the-medizine-1200x675.jpg" alt="chris gardner y su hijo" width="600" height="350">
       <h3>Video tematico</h3>
-      <iframe src="https://www.youtube.com/embed/JI38P6aDbDY" width="600" height="350" frameborder="0"></iframe>
+      <iframe id="videoo" src="https://www.youtube.com/embed/JI38P6aDbDY" width="600" height="350" frameborder="0"></iframe>
       <br>
       <h3>Audio para reflexionar</h3>
       <audio controls><source src="/audio/Mejores Frases De Películas Que Te Harán Reflexionar - My financiero.mp3" type="audio/mpeg"></audio>
+      <br><br>
+      <img src="/img/hxoxNqOhRHcaSjbnHUTxMoXXJiAjzvWS0jkwXmaY9ps.webp" alt="" width="500" height="370">
+      <img src="/img/en-busca-de-la-felicidad.jpg" alt="" width="500" height="370">
+      <img src="/img/what-is-the-red-ferrari-in-pursuit-of-happiness.webp" alt="" width="1004" height="">
+      <br>
+      <h2>Eres feliz?</h2>
+      <img src="/img/vecteezy_realistic-right-and-wrong-yes-or-no-approved-or-declined_18842635 (1).png" alt="" usemap="#mapas">
+      <map name="mapas">
+        <area shape="circle" coords="33,15,86" href="/img/felizzz.png" alt="">
+      </map>
+      <img src="/img/no.png" alt="" usemap="#mapas2">
+      <map name="mapas2">
+        <area shape="circle" coords="37,23,89" href="/img/trs.jpg" alt="">
+      </map>
+    </article>
+    <article>
+      <header>
+        <h2>Estas triste o desmotivado?</h2>
+      </header>
+      <p>Si lo estas te puedo dejar un website de ayuda.</p>
+      <a target="_blank" href="https://message-for-you.net/vacio-interior/?utm_medium=ad-grants&gad_source=1&gad_campaignid=17553695756&gbraid=0AAAAAou_aT7sE_WInMQ0Vp7TWJXMVT7j-&gclid=EAIaIQobChMI-dfa7v-6jQMVsqxaBR06TB4ZEAAYASAAEgI7DvD_BwE">Website</a>
+      <p>O si quieres te dejo un documento en este caso pdf que tambien es de ayuda</p>
+      <a title="Documento De ayuda" download="felicidad_de_seneca.pdf" href="/docs/felicidad_de_seneca.pdf">Felicidad.pdf</a>
     </article>
     </section>
     </main>
-    <hr>
     <section id="phrase">
     <blockquote>Nunca dejes que nadie te diga que no puedes hacer algo. Ni siquiera yo. Si tienes un sueño, tienes que protegerlo.
         <br>
@@ -124,7 +201,7 @@ Chris se enfrenta a la discriminación y a las dudas de los demás, pero nunca s
     </blockquote>       
     </section>
     </body>
-    <hr>
+    
     <footer>
     thomasnzcp78@gmail.com 2025
     </footer>
