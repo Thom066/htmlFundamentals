@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Here I am giving a title to the window-->
+        <title>Documento</title>
+        <link rel="shortcut icon" href="/img/Yin_yang.svg.png" type="image/x-icon">
+        <meta name="Autor" content="Thomas Noriega">
+        <meta name="Descripcion" content="Ejercicios sobre semantica y estructura HTML">
+        <meta name="keywords" content="felicidad, desarrollo, Paginas, Frase">
+        <script src="https://kit.fontawesome.com/beb55b994d.js" crossorigin="anonymous"></script>
+        <style>
+         .navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+            background: rgb(9, 107, 102);
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+        .nav-list li {
+            margin-right: 20px;
+        }
+
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-list li a:hover {
+            color: #00ff80;
+        }
+        #sect3 {
+            background-color: rgb(230, 230, 230);
+        }
+        #acerca_de_mi {
+            background-color: rgb(68, 179, 173);
+        }
+        #phrase {
+            background-color: rgb(67, 180, 165);
+            width: 300px;
+            height: 95px;
+        }
+        .footer {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+            background: rgb(9, 107, 102);
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px ;
+        }
+        .footer-list {
+            display: flex;
+            list-style: none;
+        }
+        .footer-list li {
+            margin-right: 20px;
+        }
+
+        .footer-list li:last-child {
+            margin-right: 0;
+        }
+
+        .footer-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .list li a:hover {
+            color: #00ff80;
+        }
+        .list {
+            display: flex;
+            list-style: none;
+        }
+        .list li {
+            margin-right: 20px;
+        }
+
+        .list li:last-child {
+            margin-right: 0;
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .list li a:hover {
+        color: #00ff80;
+        }
+
+        .site-list {
+            display: flex;
+            list-style: none;
+        }
+        .site-list li {
+            margin-right: 20px;
+        }
+
+        .site-list li:last-child {
+            margin-right: 0;
+        }
+
+        .site-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        .site-list li a:hover {
+        color: #00ff80;
+        }
+
+
+
+        </style>
+    </head>
+    <body>
+        <header id="headernav">
+        <!--In this heading tag, which is an h1, I put my name-->
+        
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#acerca_de_mi">Acerca de mí</a></li>
+                <li><a href="#videoo">Video</a></li>
+                <li><a href="#sect3">Más</a></li>
+                <li><a href="#phrase">Frase celebre</a></li>
+            </ul>
+        </nav>
+        </header>  
+        
+        <h1 id="titlePrincipal" class="header">Thomas Noriega Zuleta</h1>
+        
+        <main>
+        <article id="acerca_de_mi">
+        <!--In this H2 tag, I put my hobbies-->
+        <h2>Mi pasatiempo favorito es jugar al fútbol y leer libros y aprender más.</h2>
+        <!--In this H3 tag, I put my favorite food-->
+        <h3>Mi comida favorita son los espaguetis.</h3>
+        <!--In this p tag I put a paragraph about why I'm interested in web development-->
+        <p>Me interesa el desarrollo web porque me gusta dar rienda suelta a mi creatividad, jugar con los colores y hacer que mis cosas se vean visualmente organizadas e interactivas, en este caso páginas web.</p>
+        <section>
+        <!--Within this h2 I set goals to know that the list below talks about them-->
+        <h2>Metas</h2>
+        <!--ordered list with 3 items about my goals-->
+        <ol id="olist" class="listo">
+            <li>Primero aprender los conceptos y fundamentos de HTML y CSS</li>
+            <li>Aprender a poner en práctica lo aprendido.</li>
+            <li>Hacer prácticamente todo en inglés</li>
+        </ol>
+        </section>
+        <section>
+        <!--Within this h2 I put another header to separate it from the previous list-->
+        <h2>Paginas Favoritas</h2>
+        <!--Unordered list with 5 pages that I like-->
+        <ul id="ulist2" class="list">
+            <li><a target="_blank" href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/">Youtube</a></li>
+            <li><a target="_blank" href="https://openai.com/index/chatgpt/">Chat Gpt</a></li>
+            <li><a target="_blank" href="https://tienda.betplay.com.co/">Betplay</a></li>
+        </ul>
+        </section>
+        <section>
+        <!--h2 to separate one topic from another-->
+        <h2>Sitio educativo</h2>
+        <!--link to go to an educational site using the tag a-->
+        <ul class="site-list"><li><a href="https://ellibrodepython.com/">El libro de python</a></li></ul>
+        </section>
+        <!--line break by means of a br-->
+        <br>
+        <!--image brought from a URL using img and I leave the link in "src" to show the photo-->
+        <img src="https://images.pexels.com/photos/5710585/pexels-photo-5710585.jpeg" alt="Image of someone copying something into their notebook" width="320" height="200"> 
+        <img id="gif" src="/img/gif.gif" alt="" width="400" height="400">
+        <style>
+        #gif {
+            float: right;
+            margin-right: 20px;
+        }
+        </style>
+    </article>
+    
+    <section id="sect3">
+    <article>
+      <header>
+        <h2>
+         En busca de la felicidad
+        </h2>
+      </header>
+      <p>   
+        La película <em>"En busca de la felicidad"</em> nos deja varios mensajes, tales como:
+        <ul>
+        <li><em>Perseverancia y determinación: </em><br>
+Chris Gardner, a pesar de las dificultades económicas y sociales, <strong>nunca se rinde</strong> en su búsqueda de un futuro mejor para él y su hijo. 
+</li>
+
+<li><em>
+El poder del amor: </em><br>
+El fuerte vínculo entre Chris y su hijo es lo que le da la <strong>fuerza para seguir adelante</strong>, demostrando que el amor es una fuerza poderosa que puede superar cualquier obstáculo. 
+</li>
+
+<li><em>
+La importancia de creer en uno mismo: </em><br>
+La película nos enseña que, a pesar de las dudas y los obstáculos, debemos <strong>creer</strong> en nuestra capacidad para lograr nuestros sueños.  
+</li>
+
+<li><em>
+El valor del trabajo duro:</em> <br>
+Chris pone todo su <strong>esfuerzo y dedicación</strong> en su trabajo, demostrando que el éxito no llega sin un trabajo duro y constante. 
+</li>
+
+<li><em>
+El camino hacia la felicidad no es lineal:</em> <br>
+La película muestra que la búsqueda de la <strong>felicidad</strong> puede ser un viaje largo y difícil, lleno de altibajos, pero que al final vale la pena.  
+</li>
+
+<li><em>
+    Nunca dejar que nadie te diga que no puedes hacer algo: </em><br>
+Chris se enfrenta a la discriminación y a las dudas de los demás, pero nunca se rinde y demuestra que, <strong>con perseverancia y determinación, podemos lograr lo que nos propongamos</strong>. 
+</li>
+</ul>
+  </p>
+      <p>
+        En este sentido, la película tiene una enseñanza clara: cuando un obstáculo se presenta, buscas soluciones y lo enfrentas. Tienes que seguir adelante porque está en tus manos cambiar la situación. Superar las dificultades habla de perseverancia. Siempre la vida nos interpondrá desafíos.
+      </p>
+      <img src="https://cdn.themedizine.com/2021/03/en_busca_de_la_felicidad_the-medizine-1200x675.jpg" alt="chris gardner y su hijo" width="600" height="350">
+      <h3>Video tematico</h3>
+      <iframe id="videoo" src="https://www.youtube.com/embed/JI38P6aDbDY" width="600" height="350" frameborder="0"></iframe>
+      <br>
+      <h3>Audio para reflexionar</h3>
+      <audio controls><source src="/audio/Mejores Frases De Películas Que Te Harán Reflexionar - My financiero.mp3" type="audio/mpeg"></audio>
+      <br><br>
+      <img src="/img/hxoxNqOhRHcaSjbnHUTxMoXXJiAjzvWS0jkwXmaY9ps.webp" alt="" width="500" height="370">
+      <img src="/img/en-busca-de-la-felicidad.jpg" alt="" width="500" height="370">
+      <img src="/img/what-is-the-red-ferrari-in-pursuit-of-happiness.webp" alt="" width="1004" height="">
+      <br>
+      <h2>Eres feliz?</h2>
+      <img src="/img/vecteezy_realistic-right-and-wrong-yes-or-no-approved-or-declined_18842635 (1).png" alt="" usemap="#mapas">
+      <map name="mapas">
+        <area shape="circle" coords="33,15,86" href="/img/felizzz.png" alt="">
+      </map>
+      <img src="/img/no.png" alt="" usemap="#mapas2">
+      <map name="mapas2">
+        <area shape="circle" coords="37,23,89" href="/img/trs.jpg" alt="">
+      </map>
+    </article>
+    <article>
+      <header>
+        <h2>Estas triste o desmotivado?</h2>
+      </header>
+      <p>Si lo estas te puedo dejar un website de ayuda.</p>
+      <a target="_blank" href="https://message-for-you.net/vacio-interior/?utm_medium=ad-grants&gad_source=1&gad_campaignid=17553695756&gbraid=0AAAAAou_aT7sE_WInMQ0Vp7TWJXMVT7j-&gclid=EAIaIQobChMI-dfa7v-6jQMVsqxaBR06TB4ZEAAYASAAEgI7DvD_BwE">Website</a>
+      <p>O si quieres te dejo un documento en este caso pdf que tambien es de ayuda</p>
+      <a title="Documento De ayuda" download="felicidad_de_seneca.pdf" href="/docs/felicidad_de_seneca.pdf">Felicidad.pdf</a>
+    </article>
+    </section>
+     <section class="container-gallert-inline">
+        <h2>Galería De Imagenes</h2>
+        <div class="gallery-inline">
+            <img src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Imagen 1">
+            <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Imagen 2">
+            <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Imagen 3">
+            <img src="https://images.pexels.com/photos/1476880/pexels-photo-1476880.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Imagen 4"  width="600" height="400" >
+        </div>
+    </section>
+    </main>
+    <section id="phrase">
+    <blockquote>Nunca dejes que nadie te diga que no puedes hacer algo. Ni siquiera yo. Si tienes un sueño, tienes que protegerlo.
+        <br>
+        <cite>Steven Conrad</cite>
+    </blockquote>       
+    </section>
+    <section>
+        <h2>Formulario</h2>
+    <fieldset>
+        <legend><b>Llenar</b></legend>
+        <form action="" method="post">
+            <p><label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required minlength="3" style="border: 1px solid #ccc; color: rgb(112, 112, 243); margin: 5px;"></p>
+
+            <p><label for="email">Email:</label>
+            <input type="email" name="email" id="email" required minlength="5" style="border: 1px solid #ccc; color: rgb(112, 112, 243); margin: 5px;"></p>
+
+            <p><label for="mensaje">Mensaje:</label>
+            <input name="mensaje" required minlength="4" type="text" style="border: 1px solid #ccc; color: rgb(112, 112, 243); margin: 5px;"></p>
+
+            <p><label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password" required minlength="5" placeholder="Escribe una contraseña" style="border: 1px solid #ccc; color: rgb(255, 0, 0); margin: 5px;"></p>
+
+            <p><label for="lenguaje">Escoje un lenguaje de programacion:</label>
+            <select name="lenguaje" id="lenguaje">
+                <option value="javascript">Javascript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option></p>
+            </select>
+            
+            <p>Escoje lenguajes de interes:</p>
+            <input type="checkbox" name="opcionhtml" id="opcionhtml">
+            <label for="">Html y css</label><br>
+            <input type="checkbox" name="opcionjs" id="opcionjs">
+            <label for="">Javascript</label><br>
+            <input type="checkbox" name="opcionjava" id="opcionjava">
+            <label for="">Java</label><br>
+            <input type="checkbox" name="opcionpython" id="opcionpython">
+            <label for="">Python</label><br>
+            
+            <p>Que sistema operativo te gusta mas?:</p>
+            <input type="radio" name="windows" id="windows" value="windows">
+            <label for="">Windows</label>
+            <input type="radio" name="linux" id="linux" value="linux">
+            <label for="">Linux</label><br><br>
+
+            <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none;">Enviar</button>
+            <button type="reset">Reiniciar</button>
+        </form>
+    </fieldset>
+</section>
+    </body>
+    
+    <footer class="footer">
+    <ul class="footer-list">
+        <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
+        <li><a href="https://github.com/Thom066"><i class="fa-brands fa-github"></i></a></li>
+        <li>thomasnzcp78@gmail.com 2025</li></ul>
+    </footer>
+  </html>
