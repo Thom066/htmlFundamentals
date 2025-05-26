@@ -2,11 +2,12 @@
 <html>
     <head>
         <!--Here I am giving a title to the window-->
-        <title>Documento</title>
+        <title>ThomasNoriega</title>
         <link rel="shortcut icon" href="/img/Yin_yang.svg.png" type="image/x-icon">
         <meta name="Autor" content="Thomas Noriega">
         <meta name="Descripcion" content="Ejercicios sobre semantica y estructura HTML">
         <meta name="keywords" content="felicidad, desarrollo, Paginas, Frase">
+        <link rel="stylesheet" href="ejercicio-06.css">
         <script src="https://kit.fontawesome.com/beb55b994d.js" crossorigin="anonymous"></script>
         <style>
          .navbar {
@@ -144,8 +145,16 @@
             text-align: center;
             padding: 3px 6px;
         }
+        .dl1{
+            font-family: 'Segoe UI', sans-serif;
+        }
+        #dt1, #dt2, #dt3 {
+            font-weight: bold;
+            color: #1e40af; 
+        }
         </style>
     </head>
+
     <body>
         <header id="headernav">
         <!--In this heading tag, which is an h1, I put my name-->
@@ -162,8 +171,8 @@
         
         <h1 id="titlePrincipal" class="header">Thomas Noriega Zuleta</h1>
         
-        <main>
-        <article id="acerca_de_mi">
+<main>
+    <article id="acerca_de_mi">
         <!--In this H2 tag, I put my hobbies-->
         <h2>Mi pasatiempo favorito es jugar al fútbol y leer libros y aprender más.</h2>
         <!--In this H3 tag, I put my favorite food-->
@@ -180,6 +189,7 @@
             <li>Hacer prácticamente todo en inglés</li>
         </ol>
         </section>
+
         <section>
         <!--Within this h2 I put another header to separate it from the previous list-->
         <h2>Paginas Favoritas</h2>
@@ -192,6 +202,7 @@
             <li><a target="_blank" href="https://tienda.betplay.com.co/">Betplay</a></li>
         </ul>
         </section>
+
         <section>
         <!--h2 to separate one topic from another-->
         <h2>Sitio educativo</h2>
@@ -205,7 +216,7 @@
         <img id="gif" src="/img/gif.gif" alt="" width="400" height="400">
     </article>
     
-    <section id="sect3">
+<section id="sect3">
     <article>
       <header>
         <h2>
@@ -293,12 +304,14 @@ Chris se enfrenta a la discriminación y a las dudas de los demás, pero nunca s
         </div>
     </section>
     </main>
+
     <section id="phrase">
     <blockquote>Nunca dejes que nadie te diga que no puedes hacer algo. Ni siquiera yo. Si tienes un sueño, tienes que protegerlo.
         <br>
         <cite>Steven Conrad</cite>
     </blockquote>       
     </section>
+
     <section>
         <h2>Formulario</h2>
     <fieldset>
@@ -344,7 +357,9 @@ Chris se enfrenta a la discriminación y a las dudas de los demás, pero nunca s
         </form>
     </fieldset>
 </section>
+
 <br>
+
 <section>
     <table>
         <thead>
@@ -377,8 +392,29 @@ Chris se enfrenta a la discriminación y a las dudas de los demás, pero nunca s
         </tbody>
     </table>
 </section><br>
+
+<section>
+    <ol id="ol1" >
+        <li>Aprender concenptos</li>
+        <li>Aprender estructura</li>
+        <li>Empezar a diseñar</li>
+    </ol>
+    <ul id="ul1">
+        <li>Aprender Html</li>
+        <li>Aprender Python</li>
+        <li>Aprender Javascript</li>
+    </ul>
+    <dl id="dl1" class="dl1">
+        <dt id="dt1">HTML</dt>
+        <dd>Lenguaje de marcado de hipertexto</dd>
+        <dt id="dt2">CSS</dt>
+        <dd>Hojas de estilo en cascada</dd>
+        <dt id="dt3">JS</dt>
+        <dd>lenguaje de scripting principalmente utilizado en la web. </dd>
+    </dl>
+</section>
     </body>
-    
+
     <footer class="footer">
     <ul class="footer-list">
         <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
